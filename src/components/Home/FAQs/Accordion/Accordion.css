@@ -1,0 +1,65 @@
+.aj-accordions {
+  margin: 0 1.31rem;
+}
+@media screen and (width >= 992px) {
+  .aj-accordions {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 2.5rem 4.75rem;
+    margin: 0 4.38rem;
+  }
+}
+@media screen and (width < 992px) {
+  .aj-accordions {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+.aj-accordion {
+  max-width: 35.9375rem;
+  margin: 0 auto;
+}
+.aj-acc-header {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (width < 992px) {
+  .aj-acc-header {
+    padding-right: 0.0625rem;
+  }
+}
+.aj-acc-header p {
+  color: var(--black-color, #1C1B1F);
+  font-family: var(--font-family);
+  font-size: var(--title-font-size);
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.aj-acc-icon {
+  width: 1.24994rem;
+  height: 0.93581rem;
+  transition: .3s;
+}
+.aj-hidden-box {
+  grid-column: 2;
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+}
+.aj-hidden-box p {
+  color: var(--black-color, #1C1B1F);
+  font-family: var(--font-family);
+  font-size: var(--text-font-size);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: -0.03rem;
+}
+.aj-active-box {
+  max-height: 245px;
+}
+.aj-rotate {
+  transform: rotate(180deg);
+}

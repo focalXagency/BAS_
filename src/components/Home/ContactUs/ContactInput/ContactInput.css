@@ -1,0 +1,42 @@
+.aj-contact-email {
+  flex-grow: 1;
+  margin-bottom: 2rem;
+  width: 29rem;
+}
+@media screen and (width < 768px) {
+  .aj-contact-email {
+    width: unset;
+    margin-bottom: 1.25rem;
+  }
+}
+.aj-contact-us .aj-contact-input-title {
+  color: var(--white-color, #FFFBFE);
+  font-family: var(--font-family);
+  font-size: var(--text-font-size);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 131%;
+  letter-spacing: -0.03rem;
+  margin-bottom: 0.5rem;
+}
+@media screen and (width < 768px) {
+  .aj-contact-us .aj-contact-input-title {
+    margin-bottom: 0.38rem;
+  }
+}
+.aj-contact-us .aj-contact-email-input {
+  display: flex;
+  border-bottom: 1px solid var(--dark-grey);
+  padding-bottom: 0.25rem;
+  align-items: center;
+}
+.aj-contact-us .aj-contact-email-input input {
+  flex-grow: 1;
+  background-color: transparent;
+  border: unset;
+  outline: unset;
+  color: #FFF;
+}
+.aj-contact-us .aj-contact-email-input svg {
+  margin-right: 1.43rem;
+}

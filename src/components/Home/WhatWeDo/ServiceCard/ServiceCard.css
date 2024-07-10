@@ -1,0 +1,68 @@
+.aj-service-card {
+  background: #FFF;
+  padding: 1.87rem 2.19rem;
+  text-align: center;
+  position: relative;
+  width: 23.13rem;
+  height: 22.875rem;
+}
+@media screen and (width <= 1024px) {
+  .aj-service-card {
+    width: 16.125rem;
+    height: 15.9375rem;
+    padding: 1rem 1.12rem;
+    box-shadow: 0px 1.899px 3.799px 0px rgba(0, 0, 0, 0.10), 0px 3.799px 19.942px 0px rgba(0, 0, 0, 0.07);
+  }
+}
+.aj-service-card img {
+  margin: 0 auto;
+}
+.aj-service-card h3 {
+  margin: 1.38rem auto;
+  color: var(--black-color, #1C1B1F);
+  font-family: var(--font-family);
+  font-size: var(--title-font-size);
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+@media screen and (width <= 1024px) {
+  .aj-service-card h3 {
+    margin: 1rem auto;
+  }
+}
+.aj-service-card p {
+  color: var(--black-color, #1C1B1F);
+  text-align: center;
+  font-family: var(--font-family);
+  font-size: var(--text-font-size);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 131%;
+  letter-spacing: -0.03rem;
+}
+@media screen and (width <= 1024px) {
+  .aj-service-card h3 {
+    font-size: 1.1875rem;
+    font-weight: 800;
+    text-transform: capitalize;
+  }
+  .aj-service-card p {
+    font-size: 0.6875rem;
+    font-weight: 300;
+  }
+  
+}
+@media screen and (width > 1024) {
+  .aj-service-card:nth-child(1)::after,
+  .aj-service-card:nth-child(2)::after
+  {
+    content: '';
+    position: absolute;
+    width: 0.11744rem;
+    height: 17.08338rem;
+    background: #D9D9D9;
+    top: 2.88rem;
+    right: 0;
+  }
+}

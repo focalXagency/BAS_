@@ -1,0 +1,126 @@
+.aj-who-we-are {
+  background-color: #191919;
+  height: 38.75rem;
+  margin-bottom: 5.94rem;
+}
+@media screen and (width < 768px) {
+  .aj-who-we-are {
+    padding-top: 10.94rem;
+    height: 32.875rem;
+  }
+}
+@media screen and (width < 768px) {
+  .aj-who-we-are {
+    margin-bottom: 21.31rem;
+  }
+}
+
+.aj-who-we-are .aj-section-header {
+  margin-top: 10.5rem;
+  margin-bottom: 3.31rem;
+}
+@media screen and (width < 768px) {
+  .aj-who-we-are .aj-section-header {
+    margin-top: 0;
+  }
+}
+.aj-who-we-are .aj-section-header p {
+  max-width: 58.6rem;
+  margin: 0 1rem;
+}
+@media screen  and (width < 768px) {
+  .aj-who-we-are-container {
+    bottom: -249px;
+    margin-bottom: 210px;
+  }
+}
+@media screen  and (width < 576px) {
+  .aj-who-we-are-container {
+    margin-bottom: 250px;
+  }
+}
+.aj-who-we-are .aj-section-text,
+.aj-who-we-are .aj-section-header h2 {
+  color: var(--white-color, #FFFBFE);
+}
+.aj-about-cards {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  margin: 0 3rem;
+}
+@media screen and (width < 768px) {
+  .aj-about-cards {
+    flex-direction: column;
+  }
+}
+.aj-about-cards-vector {
+  position: absolute;
+  right: -41px;
+  top: -36px;
+}
+.aj-about-cards-vector-large {
+  position: absolute;
+  top: -57px;
+  right: -62px;
+}
+@media screen and (width >= 768px) {
+  .aj-about-cards-vector {
+    display: none;
+  }
+}
+@media screen and (width < 768px) {
+  .aj-about-cards-vector-large {
+    display: none;
+  }
+}
+.aj-about-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.761rem;
+  width: 25rem;
+  height: 14.375rem;
+  padding: 1.37rem 0.3rem 1.625rem;
+  justify-content: center;
+  align-items: center;
+  background: #FFFBFE;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.20), 0px 4px 21px 0px rgba(0, 0, 0, 0.14);
+}
+@media screen and (width < 768px) {
+  .aj-about-card {
+    width: 18.6875rem;
+    height: 9.0625rem;
+    max-width: 24rem;
+    flex-direction: column;
+    padding: 0.62rem 0.66rem 0.44rem;
+  }
+}
+.aj-about-card p {
+  color: var(--black-color, #1C1B1F);
+  text-align: center;
+  font-family: var(--font-family);
+  font-size: var(--text-font-size);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.875rem;
+}
+@media screen and (width < 1300px) {
+  .aj-about-card p {
+    color: var(--black-color, #1C1B1F);
+    text-align: center;
+    font-family: var(--font-family);
+    font-size: var(--text-font-size);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.25rem;
+  }
+}
+@media screen and (width < 992px) {
+  .aj-about-card p {
+    text-align: center;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+  }
+}

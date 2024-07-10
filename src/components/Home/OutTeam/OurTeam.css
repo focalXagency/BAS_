@@ -1,0 +1,75 @@
+.aj-our-team {
+  background-color: var(--black-color);
+  height: 20.1875rem;
+}
+.aj-our-team .aj-section-header {
+  margin: 4rem 0 4rem;
+}
+@media screen and (width < 576px) {
+  .aj-our-team {
+    height: 9.67481rem;
+  }
+  .aj-our-team .aj-section-header {
+    margin: 1.59rem 0 1.59rem;
+    flex-direction: unset;
+  }
+  .aj-our-team .aj-section-text, .aj-our-team .aj-mobile-badge {
+    display: none;
+  }
+}
+.aj-our-team .aj-section-header h2 {
+  color: var(--white-color);
+}
+.aj-team-slide img {
+  width: 20.1875rem;
+  margin: 0 auto;
+}
+@media screen and (width < 768px) {
+  .aj-team-slide img {
+    width: 9.441rem;
+  }
+}
+.aj-team-slide .aj-member-name {
+  color: #1C1B1F;
+  text-align: center;
+  font-family: var(--font-family);
+  font-size: var(--title-font-size);
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.aj-team-slide .aj-member-job {
+  color: var(--Black, #1C1B1F);
+  text-align: center;
+  font-family: var(--font-family);
+  font-size: var(--text-font-size);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 131%;
+  letter-spacing: -0.03rem;
+  margin-bottom: 0.9rem;
+}
+@media screen and (width < 576px) {
+  .aj-team-slide .aj-member-name {
+    font-size: 1rem;
+    margin: 0.38rem 0;
+  }
+  .aj-team-slide .aj-member-job {
+    font-size: 0.75rem;
+    font-weight: 300;
+    line-height: normal;
+  }
+}
+@media screen and (width <= 576px) {
+  .aj-our-team .slick-list {
+    width: 190px;
+    margin: 0 auto;
+    overflow: unset;
+  }
+}
+.aj-our-team .slick-slide {
+  display: flex !important;
+  justify-content: center;
+}

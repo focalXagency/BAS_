@@ -1,0 +1,64 @@
+{
+    overflow-x: hidden;
+}
+
+
+
+/* Custom dot styles */
+
+.slick-dots li {
+    list-style-type: none;
+    margin: 0 1.5rem 0 0 !important; 
+    cursor: pointer;
+    width: fit-content !important;
+    height: fit-content !important;
+}
+@media screen and (width < 576px) {
+    .slick-dots li {
+        margin: 0 0.53rem 0 0 !important;
+    }
+}
+.slick-dots li button:before {
+    content: '';
+    display: none;
+}
+.slick-dots li button {
+    width: 0.37rem !important;
+    height: 0.37rem !important;
+    border-radius: 50%; 
+    background-color: var(--assets-color) !important;
+    padding: 0 !important;
+}
+
+.slick-dots li.slick-active button {
+    background-color: var(--Primary) !important;
+    position: relative;
+}
+.slick-dots li.slick-active button:after {
+    content: '';
+    width: 0.789rem !important;
+    height: 0.789rem !important;
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid var(--Primary);
+    left: -4px;
+    top: -4px;
+}
+
+@media screen and (width >= 576px) {
+    .slick-dots {
+        bottom: unset !important;
+        padding-top: 1.5rem !important;
+    }
+    .slick-dots li button {
+        width: 0.8125rem !important;
+        height: 0.8125rem !important;
+        background-color: var(--assets-color) !;
+    }
+    .slick-dots li.slick-active button:after {
+        width: 1.6875rem !important;
+        height: 1.6875rem !important;
+        left: -8px;
+        top: -8px;
+    }
+}

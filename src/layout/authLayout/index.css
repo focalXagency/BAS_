@@ -1,0 +1,36 @@
+
+.auth-container{
+    background-color: var(--black-color);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    padding: 80px 0px 0px 0px ;
+}
+
+.space{
+width: 5%;
+height: 100px;
+margin: 0px 20px ;
+word-break: break-all;
+
+}
+.arrow-navigation{
+    width: 5%;
+    display: block;
+    margin: 0px 20px ;
+    word-break: break-all;
+    cursor: pointer;
+}
+
+
+.arrow-navigation svg path{
+    fill:var(--white-color);
+}
+
+.auth-img{
+    position: absolute;
+    bottom: 0%;
+}

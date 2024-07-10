@@ -1,0 +1,111 @@
+
+.StudyCase{
+
+}
+
+.cards-parent{
+    padding: 5rem 4.34rem;
+}
+
+.cards-parent .cards-menu{
+    list-style: none;
+    display: flex;
+    gap: 4rem;
+    font-weight: 500;
+    font-size: 1.3rem;
+    justify-content: center;
+    color: var(--black-color);
+    margin: 0px 0px 70px 0px;
+
+}
+.cards-parent .cards-menu>li{
+    padding: 5px 30px;
+    cursor: pointer;
+}
+
+
+.cards-parent .cards-menu>li.active::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background: var(--black-color);
+    animation: progressBar 0.3s ease-in-out forwards;
+   }
+
+   @keyframes progressBar {
+    0% {
+      width: 0;
+   }
+    100% {
+      width: 100%;
+   }
+  }
+
+  .cards-list-parent{
+    
+  }
+.cards-parent .cards-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+
+}
+.cards-list-parent{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.cards-list-parent .style-1 .paginationUL .pageItem .pageButton{
+
+    border-radius: 30%;
+
+}
+
+.cards-list-parent .style-1 .paginationUL .pageItem .activeButton,
+.cards-list-parent .style-1 .paginationUL .pageItem .pageButton:hover{
+
+    background-color: var(--assets-color);
+    color: var(--black-color);
+}
+
+
+@media screen and (max-width:640px) {
+
+    .cards-parent{
+        padding: 1rem 4.34rem;
+    }
+    
+    .cards-parent .cards-menu{
+        margin-left: 2rem;
+        gap: 0.8rem;
+        flex-wrap: wrap;
+        width: 100%;
+        font-size: 1rem;
+        margin: 0px 0px 30px 0px;
+    }
+    
+
+    .cards-parent .cards-list{
+        display: grid;
+        grid-template-columns:  1fr;
+        gap: 30px;
+    
+    }
+
+}
+
+@media screen and (max-width:480px) {
+
+    .cards-parent .cards-menu{
+        margin-left: 1rem;
+        gap: 1rem;
+        font-size: 1.2rem;
+        width: 70%;
+    }
+
+    .cards-parent .cards-menu>li{
+        padding: 0px 0px;
+        cursor: pointer;
+        font-size: 15px;
+    }
+}

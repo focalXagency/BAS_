@@ -1,0 +1,28 @@
+
+
+
+.submit{
+    display: flex;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 1px;
+    color: var(--black-color);
+    padding: 10px 40px;
+    background-color: var(--white-color);
+    margin: auto;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width:660px){
+
+    .submit{
+
+        padding: 8px 30px;
+
+    }
+
+
+}

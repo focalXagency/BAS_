@@ -1,0 +1,183 @@
+.aj-admin-dashboard {
+  display: flex;
+  height: 100vh;
+}
+.aj-dash-sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 15.3125rem;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: var(--black-color, #1C1B1F);
+  padding: 2.5rem 0;
+}
+.aj-dash-sidebar .aj-dash-sidebar-logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5.47rem;
+}
+.aj-dash-sidebar .aj-dash-sidebar-logo svg {
+  width: 5.625rem;
+  height: 1.6545rem;
+}
+
+.aj-dash-sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  list-style: none;
+}
+.aj-dash-sidebar-item {
+  padding: 0.5rem 0 0.5rem 4.38rem;
+  cursor: pointer;
+  transition: .1s;
+}
+.aj-dash-sidebar-item a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+.aj-dash-sidebar-item a p {
+  color: var(--white-color, #FFFBFE);
+  font-family: var(--font-family);
+  font-size: var(--title-font-size);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+  opacity: 0.7;
+}
+.aj-dash-sidebar-item a svg {
+  color: var(--white-color);
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.aj-dash-sidebar-item:hover {
+  background-color: var(--white-color);
+}
+.aj-dash-sidebar-item:hover a p{
+  color: var(--black-color);
+  opacity: 1;
+}
+.aj-dash-sidebar-item:hover a svg {
+  color: var(--black-color);
+}
+
+.aj-dash-sidebar-login a {
+  display: flex;
+  align-items: center;
+  padding-left: 4.38rem;
+  text-decoration: none;
+}
+.aj-dash-sidebar-login a p {
+  color: var(--white-color, #FFFBFE);
+  font-family: var(--font-family);
+  font-size: var(--title-font-size);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  opacity: 0.7;
+}
+
+.aj-dash-sidebar-active {
+  left: 0 !important;
+}
+
+
+.aj-dash-storage-info {
+  margin-top: 0.5rem;
+  margin-left: 4.38rem;
+}
+.aj-dash-storage-info h3 {
+  color: var(--White, #FFFBFE);
+  font-family: var(--font-family);
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.aj-dash-storage-line {
+  width: 6.625rem;
+  height: 0.125rem;
+  background: rgba(217, 217, 217, 0.30);
+  margin: 0.5rem 0;
+}
+.aj-dash-storage-line span {
+  display: block;
+  width: 3.25rem;
+  height: 0.125rem;
+  background: var(--White, #FFFBFE);
+}
+.aj-dash-storage-info p {
+  color: rgba(255, 251, 254, 0.70);
+  font-family: var(--font-family);
+  font-size: 0.8125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 141.4%; /* 1.14888rem */
+}
+
+
+
+
+@media screen and (width >= 768px) {
+  .aj-dash-sidebar-vector-close {
+    display: none;
+  }
+}
+@media screen and (width < 768px) {
+  .aj-dash-sidebar {
+    padding: 2.5rem 0 7.5rem;
+    position: fixed;
+    left: -100%;
+    transition: .5s;
+  }
+  .aj-dash-sidebar .aj-dash-sidebar-logo {
+    justify-content: space-between;
+    padding: 0 1.25rem;
+  }
+  .aj-dash-sidebar .aj-dash-sidebar-logo .aj-dash-sidebar-main-vector {
+    width: 4.375rem;
+    height: 1.28688rem;
+  }
+  .aj-dash-sidebar .aj-dash-sidebar-vector-close {
+    width: 1.25rem !important;
+    height: 1.25rem !important;
+    cursor: pointer;
+  }
+  .aj-dash-sidebar-item {
+    padding: 0.31rem 0 0.31rem 1.25rem;
+  }
+  .aj-dash-sidebar-item a p {
+    font-size: 1.125rem;
+    line-height: 166.4%;
+  }
+
+  .aj-dash-storage-info {
+    margin-left: 1.25rem;
+  }
+  .aj-dash-storage-info h3 {
+    font-size: 1.125rem;
+    line-height: 166.4%;
+  }
+  .aj-dash-storage-line {
+    margin: 0.13rem 0 0.5rem;
+  }
+  .aj-dash-storage-info p {
+    font-size: 0.8125rem;
+    opacity: 0.7;
+  }
+
+  .aj-dash-sidebar-login a {
+    padding-left: 1.25rem;
+  }
+  .aj-dash-sidebar-login a p {
+    font-size: 1.125rem;
+    line-height: 166.4%;
+  }
+}
